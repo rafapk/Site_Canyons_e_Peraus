@@ -16,24 +16,28 @@
  
     <!-- stylesheet----------------->
 
-    
-
-   
-
-
-
-
-
-
- 
-    
- 
-        
-    
-    
- 
-
 <title>Canyons e Peraus</title>
+
+
+
+
+   <!-- Menu Toogle -->
+   <style>
+    .d-inline {
+       display: inline;
+    }
+ </style>
+
+ <script>
+    function menuToggle() {
+       let menu = document.getElementById('menu')
+       menu.classList.toggle('d-inline')   
+    }
+
+ </script>
+
+
+
 
 </head>
 
@@ -43,19 +47,23 @@
 
         <div class="container">
             <div class="logo">
-                <a href=""><img src="assets/images/logo_tamanho.png" /></a>
+                <a href="logoimg">  <img src="assets/images/logo_tamanho.png" />     </a>
             </div>
             <div class="menu">
 
-                <img class='menu-opener'src="assets/images/menu_mobile_basi.png" /> 
-                <nav>
+                <img class='menu-opener'src="assets/images/menu_mobile_basi.png"alt="Icone Menu" onclick="menuToggle()">
+                <nav id="menu">
+
+  <!-- 
                     <div class="menuMobile">
                         <div class="mm_line"></div>
                         <div class="mm_line"></div>
                         <div class="mm_line"></div>
                     </div>
+-->
+
                     <ul>
-                        <li class="active"><a href="">HOME</a></li>
+                        <li class="active"><a href="#">HOME</a></li>
                         <li><a href="">QUEM SOMOS</a></li>
                         <li><a href="https://loja-canyonseperaus.paytour.com.br/?ref=lr2QpspAnE" target="_blank" >PASSEIOS</a></li>
                         <li><a href="">DICAS</a></li>
@@ -64,6 +72,9 @@
                         <li><a href="">TRABALHE CONOSCO</a></li>
                         
                     </ul>
+
+
+
                 </nav>
             </div>
         </div>
