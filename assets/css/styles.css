@@ -820,14 +820,21 @@ display: flex;
 
     #CDSWIDSSP{
 
-        width: 80%;
-        height: 100%;
+        width: 100% !important;
+
+
+    }
+  
+    #CDSWIDSSP.widSSP{
+
+        width: 100% !important;
+        
     }
 
     #CDSRATINGWIDGET371{
 
         height: auto;
-        width: 100%;
+        width: 100% !important;
     }
     
     .section-aboutus--right {
@@ -969,15 +976,21 @@ display: flex;
 
     }
 
-    .section-aboutus--right{
+    .section-aboutus--right, #TA_cdsratingsonlywide371, #CDSROWCONTAINER371, #CDSROWLOGO371, #CDSROWLOC371,CDSROWRATING371, .ui_bubble_rating bubble_50 {
 
-        width:auto;
+        width: 100% !important;
 
 
 
 
     }
 
+    #CDSRATINGWIDGET371{
+
+
+        width: 95% !important;
+
+    }
 
 
 
@@ -1048,13 +1061,29 @@ display: flex;
 
 
     }
-  /*
+   
+    #CDSWIDSSP{
+
+        width: 100% !important;
+
+
+    }
+  
     #CDSWIDSSP.widSSP{
 
-        width: 100%;
+        width: 100% !important;
         
     }
 
+    .default .section-body {
+
+        margin-top: 20px;
+    
+    }
+
+    
+
+    /*
     .widSSP widSSP{
 
         width: 100%;
@@ -1073,15 +1102,22 @@ display: flex;
         width: 100%;
 
     }
+    */
+    #CDSROWRATING371{
 
-    #CDSRATINGWIDGET371{
+        display: flex;
+        flex-direction: column;
 
-        height: auto;
-        width: 100%;
     }
 
-    */
-    
+    .ui_bubble_rating {
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+
+    }
+
     .section-aboutus--right {
       
         display: flex;
@@ -1127,7 +1163,7 @@ display: flex;
 
     .whatsapp-flutuante{
 
-        right: 2px;
+        right: 8px;
 
     }
     .whatsapp-flutuante img{
@@ -1137,6 +1173,29 @@ display: flex;
 
 
     }
+    
+
+    .titulo-insta .section-title {
+
+        font-size: 18px;
+ 
+    }
+
+    .section-map--area {
+
+        font-size: 12px;
+
+
+    }
+
+    .section-map--info-item-img{
+
+        width: auto;
+        height: auto;
+        margin-right: 5px;
+    }
+
+
 
 
 
