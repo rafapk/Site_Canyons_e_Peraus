@@ -23,9 +23,15 @@ header {
 	width:1100px;
     
 }
+
+.container .logo a img{
+
+    width: 100%;
+}
 .logo {
 	display:flex;
 	align-items:center;
+     
 }
 
 .menu-opener{
@@ -35,6 +41,7 @@ header {
 .menu {
 	display:flex;
 	align-items:center;
+    overflow: hidden;
 }
 nav ul,
 nav li {
@@ -199,6 +206,8 @@ nav a:hover {
 .section-team .sliders {
     width:1000vw;
     display: flex;
+    overflow: hidden;
+     
 
 }
 .section-team .slide {
@@ -208,6 +217,7 @@ nav a:hover {
     display:inline-block;
     background-color:#FFF;
     margin-right:20px;
+    margin-top: 20px;
     height: 400px
 }
 .section-team .slidearea {
@@ -491,6 +501,8 @@ align-items: center;
     padding-top: 30px;
     height: 80%;
     padding-bottom: 30px;
+    overflow: hidden;
+    
 }
 
 
@@ -498,6 +510,7 @@ align-items: center;
     width: 100vw;
     max-width: 1140px;
     margin: auto;
+    
 }
 
 .section-map--info {
@@ -506,6 +519,7 @@ align-items: center;
     margin-top:15%;
     background-color:#FFF;
     color:#000;
+    
 }
 .section-map--info-item {
     display:flex;
@@ -548,6 +562,7 @@ align-items: center;
 .social-pe a{
 
     padding-right: 10px;
+    width: 25%;
 
 }
 
@@ -722,14 +737,15 @@ display: flex;
     .menu ul {
 
         flex-direction:column;
+        align-items: center;
 
     }
 
     .menu li a{
 
         font-weight: bold;
-        height: 80px;
-        font-size: 27px;
+        height: auto;
+        font-size: 14px;
         margin-left:50px;
         border:0;
 
@@ -887,6 +903,7 @@ display: flex;
 .whatsapp-flutuante{
 
     right: 2px;
+    height: 10%;
 
 }
 .whatsapp-flutuante img{
@@ -938,6 +955,7 @@ display: flex;
     .menu ul {
 
         flex-direction:column;
+        align-items: center;
 
     }
 
@@ -945,7 +963,7 @@ display: flex;
 
         font-weight: bold;
         height: auto;
-        font-size: 20px;
+        font-size: 12px;
         margin-left:30px;
         border:0;
 
@@ -1050,6 +1068,16 @@ display: flex;
     .slide{
 
         margin-top: 50px;
+
+    }
+
+    .section-team .slide{
+
+        margin-right:0px;
+        
+
+
+
 
     }
 
@@ -1164,6 +1192,7 @@ display: flex;
     .whatsapp-flutuante{
 
         right: 8px;
+        height: 8%;
 
     }
     .whatsapp-flutuante img{
