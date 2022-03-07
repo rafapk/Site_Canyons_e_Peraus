@@ -78,6 +78,8 @@ nav a:hover {
 	
 }
 
+
+
 .column {
 	flex-direction: column;
 }
@@ -105,7 +107,7 @@ nav a:hover {
 	margin-top:30px;
 }
 .banner_options {
-	height:210px;
+	/* height:210px; */
 	display:flex;
 }
 .banner1,
@@ -134,9 +136,16 @@ nav a:hover {
 }
 .banner_desc_insta {
     font-size:12px;
-	margin-top:5px;
-	margin-bottom:2px;
+	margin-top:0px;
+	margin-bottom:0px;
 }
+
+.banner_desc_insta a{
+   
+    border: none !important;
+
+}
+
 .banner_options a {
 	display:inline-block;
 	border:1px solid #FFFFFF;
@@ -699,7 +708,7 @@ display: flex;
      
 }
 
-@media (min-width:450px) and (max-width:1219px){
+@media (min-width:490px) and (max-width:1219px){
     
     .logo{
 
@@ -917,7 +926,7 @@ display: flex;
 }
 
 
-@media (max-width:450px){
+@media (max-width:490px){
     
     .logo{
 
