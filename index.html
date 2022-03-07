@@ -33,6 +33,34 @@
  </style>
 
  <script>
+
+
+    function rolar(){
+
+        var obj=event.target.dataset.nome;
+        document.getElementById(obj).scrollIntoView();
+    }
+
+    function inicia(){
+
+        document.getElementById("bt_menu1").addEventListener("click",rolar);
+        document.getElementById("bt_menu2").addEventListener("click",rolar);
+        document.getElementById("bt_menu3").addEventListener("click",rolar);
+        document.getElementById("bt_menu4").addEventListener("click",rolar);
+        document.getElementById("bt_menu5").addEventListener("click",rolar);
+        document.getElementById("bt_menu6").addEventListener("click",rolar);
+        document.getElementById("bt_menu7").addEventListener("click",rolar);
+        document.getElementById("bt_menu8").addEventListener("click",rolar);
+    
+    
+    
+    }
+     window.addEventListener("load", inicia)
+
+
+ </script>
+
+ <script>
     function menuToggle() {
        let menu = document.getElementById('menu')
        menu.classList.toggle('d-inline')   
@@ -49,9 +77,9 @@
 
     <header>
 
-        <div class="container">
+        <div class="container_menu">
             <div class="logo">
-                <a href="logoimg">  <img src="assets/images/logo_tamanho.png" />     </a>
+                <a href="logoimg">  <img id="rolar_home"src="assets/images/logo_tamanho.png" />     </a>
             </div>
             <div class="menu">
 
@@ -67,13 +95,15 @@
 -->
 
                     <ul>
-                        <li class="active"><a href="#">HOME</a></li>
-                        <li><a href="">QUEM SOMOS</a></li>
-                        <li><a href="https://loja-canyonseperaus.paytour.com.br/?ref=lr2QpspAnE" target="_blank" >PASSEIOS</a></li>
-                        <li><a href="">DICAS</a></li>
-                        <li><a href="">GALERIA</a></li>
-                        <li><a href="">CONTATO</a></li>
-                        <li><a href="">TRABALHE CONOSCO</a></li>
+                        <li class="active"><a id="bt_menu1" data-nome="rolar_home" href="#">HOME</a></li>
+                        <li><a id="bt_menu2" data-nome="rolar_voo_de_balao">VOO DE BALÃO</a></li>
+                        <li><a id="bt_menu3" data-nome="rolar_passeios"  target="_blank" >PASSEIOS</a></li>
+                        <li><a id="bt_menu4" data-nome="rolar_quem_somos">QUEM SOMOS</a></li>
+                        
+                        <li><a id="bt_menu5" data-nome="rolar_experiencia" >Experiências na área</a></li>
+                        <li><a id="bt_menu6" data-nome="rolar_galeria" >GALERIA</a></li>
+                        <li><a id="bt_menu7" data-nome="rolar_avaliacoes" >Avaliações/Comentários</a></li>
+                        <li><a id="bt_menu8" data-nome="rolar_contato" >Contato</a></li>
                         
                     </ul>
 
@@ -124,8 +154,8 @@
                               </div>
                 <div class="banner2">
                     <div class="banner_title"> <a>Horário de Funcionamento</a> </div>
-                    <div class="banner_desc"><a>  09:00 até 12:00</a></div>
-                    <div class="banner_desc"><a>  13:30 até 18:00</a></div>
+                    <div class="banner_desc"><a>  07:00 Horas até ás 20:00 Horas</a></div>
+                    
                     
                 </div>
                 <div class="banner3">
@@ -139,7 +169,7 @@
 
     <section class="default dark bg-team" id="dark-bg-team">
         <div class="section-team-area">
-            <div class="section-title">Voo de Balão</div>
+            <div id="rolar_voo_de_balao"class="section-title">Voo de Balão</div>
             <div class="section-desc">Pacotes:</div>
             <div class="section-body">
                 <div class="section-team">
@@ -221,7 +251,7 @@
 
     <section class="default dark bg-team">
         <div class="section-team-area">
-            <div class="section-title">Passeios e trilhas</div>
+            <div id="rolar_passeios"class="section-title">Passeios e trilhas</div>
             <div class="section-desc">Pacotes:</div>
             <div class="section-body">
                 <div class="slider">
@@ -1232,7 +1262,7 @@
     </section>
       
     <section class="default light">
-        <div class="section-title">Quem Somos</div>
+        <div id="rolar_quem_somos" class="section-title">Quem Somos</div>
         <div class="section-desc">Canyons e Peraus</div>
         <div class="section-body">
             <div class="section-aboutus">
@@ -1253,7 +1283,7 @@
     </section>
     
     <section class="default dark service">
-        <div class="section-title">Experiências na área</div>
+        <div id="rolar_experiencia" class="section-title">Experiências na área</div>
         <div class="section-body">
             <div class="section-services">
                 <div class="section-service">
@@ -1289,7 +1319,7 @@
                 <div class="titulo-insta">
                    <a class="icone-insta" href="https://www.instagram.com/canyons_e_peraus/" target="_blank"> <img class="icone-insta" src="assets/images/iconeinstavaine.png" /> </a>
 
-                    <div class="section-title"> @canyons_e_peraus</div>
+                    <div id="rolar_galeria" class="section-title"> @canyons_e_peraus</div>
 
                 </div>
             
@@ -1336,7 +1366,7 @@
  
               
             <section class="default light">
-                <div class="section-title">Avaliações</div>
+                <div id="rolar_avaliacoes" class="section-title">Avaliações</div>
                 <div class="section-desc">Tripadvisor</div>
                 <div class="section-body">
                     <div class="section-aboutus">
@@ -1364,7 +1394,7 @@
     <section id="pe">
 
 
-        <div class="section-map--area">
+        <div id="rolar_contato" class="section-map--area">
             <div class="section-map--info">
                     <div class="section-map--info-item">
                         <div class="section-map--info-item-img">

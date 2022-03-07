@@ -6,6 +6,12 @@
      
 }
 
+html {
+
+    scroll-behavior: smooth;
+
+}
+
 a{
     cursor: url(../images/mouse29.cur), pointer;
 }
@@ -30,7 +36,15 @@ header {
     
 }
 
-.container .logo a img{
+
+.container_menu {
+	display:flex;
+	justify-content:space-between;
+	width: 95%;
+    
+}
+
+.container_menu .logo a img{
 
     width: 100%;
 }
@@ -65,6 +79,8 @@ nav a {
 	text-decoration:none;
 	text-transform:uppercase;
 	color:#727272;
+    font-size: 14px;
+    font-family: Times New Roman;
 }
 nav .active a,
 nav a:hover {
