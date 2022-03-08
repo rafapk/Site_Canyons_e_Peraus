@@ -39,6 +39,8 @@
 
         var obj=event.target.dataset.nome;
         document.getElementById(obj).scrollIntoView();
+        
+        
     }
 
     function inicia(){
@@ -79,7 +81,7 @@
 
         <div class="container_menu">
             <div class="logo">
-                <a href="logoimg">  <img id="rolar_home"src="assets/images/logo_tamanho.png" />     </a>
+                <a href="#">  <img id="rolar_home"src="assets/images/logo_tamanho.png" />     </a>
             </div>
             <div class="menu">
 
@@ -95,15 +97,15 @@
 -->
 
                     <ul>
-                        <li class="active"><a id="bt_menu1" data-nome="rolar_home" href="#">HOME</a></li>
-                        <li><a id="bt_menu2" data-nome="rolar_voo_de_balao">VOO DE BALÃO</a></li>
-                        <li><a id="bt_menu3" data-nome="rolar_passeios"  target="_blank" >PASSEIOS</a></li>
-                        <li><a id="bt_menu4" data-nome="rolar_quem_somos">QUEM SOMOS</a></li>
+                        <li class="active"><a id="bt_menu1" data-nome="rolar_home" onclick="menuToggle()">HOME</a></li>
+                        <li><a id="bt_menu2" data-nome="rolar_voo_de_balao" onclick="menuToggle()">VOO DE BALÃO</a></li>
+                        <li><a id="bt_menu3" data-nome="rolar_passeios"   onclick="menuToggle()" >PASSEIOS</a></li>
+                        <li><a id="bt_menu4" data-nome="rolar_quem_somos" onclick="menuToggle()">QUEM SOMOS</a></li>
                         
-                        <li><a id="bt_menu5" data-nome="rolar_experiencia" >Experiências na área</a></li>
-                        <li><a id="bt_menu6" data-nome="rolar_galeria" >GALERIA</a></li>
-                        <li><a id="bt_menu7" data-nome="rolar_avaliacoes" >Avaliações/Comentários</a></li>
-                        <li><a id="bt_menu8" data-nome="rolar_contato" >Contato</a></li>
+                        <li><a id="bt_menu5" data-nome="rolar_experiencia" onclick="menuToggle()">Experiências na área</a></li>
+                        <li><a id="bt_menu6" data-nome="rolar_galeria" onclick="menuToggle()" >GALERIA</a></li>
+                        <li><a id="bt_menu7" data-nome="rolar_avaliacoes" onclick="menuToggle()">Avaliações/Comentários</a></li>
+                        <li><a id="bt_menu8" data-nome="rolar_contato" onclick="menuToggle()" >Contato</a></li>
                         
                     </ul>
 

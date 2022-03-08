@@ -82,7 +82,7 @@ nav a {
     font-size: 14px;
     font-family: Times New Roman;
 }
-nav .active a,
+/*nav .active a */
 nav a:hover {
 	text-decoration:2px underline #00a651;
 
@@ -761,6 +761,11 @@ display: flex;
 
     }
 
+    nav a:hover {
+        text-decoration:2px underline #fff;
+    
+    }
+
 
     .menu ul {
 
@@ -785,7 +790,7 @@ display: flex;
         border:0;
         color: #FFFFFF;
      
-        text-decoration:8px underline #000;
+        /*text-decoration:8px underline #000;*/
     }
 
     .section-aboutus{
@@ -979,6 +984,11 @@ display: flex;
 
     }
 
+    nav a:hover {
+        text-decoration:2px underline #fff;
+    
+    }
+
 
     .menu ul {
 
@@ -1003,7 +1013,7 @@ display: flex;
         border:0;
         color: #FFFFFF;
      
-        text-decoration:8px underline #000;
+       /* text-decoration:8px underline #000; */
     }
 
     .section-aboutus{
